@@ -40,7 +40,8 @@
 
 
 <div id="div-input">
- <input type="text" id="txt_input" value="4"/>
+ <input type="text" id="txt_input" value="baidu"/>
+  <input type="text" id="txt_input2" value="www.baidu.com"/>
  <input type="button" id="leftInsert" value="左侧入" />
  <input type="button" id="rightInsert" value="右侧入" />
 </div>
@@ -101,8 +102,9 @@
     //左侧入
     var span = document.createElement('span'); //1、创建元素
 	inputValue= document.getElementById('txt_input').value;
+	var addr= document.getElementById('txt_input2').value;
 	span.innerHTML=inputValue;
-    span.innerHTML=span.innerHTML.link("http://www.baidu.com");
+    span.innerHTML=span.innerHTML.link(addr);
     var container = document.getElementById('container'); //2、找到父级元素
     container.insertBefore(span,container.childNodes[0]);//插入到最左边
    }
