@@ -42,8 +42,8 @@
 <div id="div-input">
  <input type="text" id="txt_input" value="baidu"/>
   <input type="text" id="txt_input2" value="www.baidu.com"/>
- <input type="button" id="leftInsert" value="左侧入" />
- <input type="button" id="rightInsert" value="右侧入" />
+ <input type="button" id="leftInsert" value="添加" />
+ <input type="button" id="rightInsert" value="删除" />
 </div>
 <div id="container">
  <span>1</span>
@@ -101,7 +101,7 @@
    document.getElementById('leftInsert').onclick=function(){
     //左侧入
     var span = document.createElement('span'); //1、创建元素
-	inputValue= document.getElementById('txt_input').value;
+	inputValue= document.getElementById('txt_input'+'\t').value;
 	var addr= document.getElementById('txt_input2').value;
 	span.innerHTML=inputValue;
     span.innerHTML=span.innerHTML.link(addr);
