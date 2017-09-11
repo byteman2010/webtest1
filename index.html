@@ -101,8 +101,7 @@
     //左侧入
     var span = document.createElement('span'); //1、创建元素
 	inputValue= document.getElementById('txt_input').value;
-	inputValue.link( "http://www.baidu.com" );
-    span.innerHTML=inputValue;
+    span.innerHTML=inputValue.link( "http://www.baidu.com" );
     var container = document.getElementById('container'); //2、找到父级元素
     container.insertBefore(span,container.childNodes[0]);//插入到最左边
    }
