@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Untitled</title>
+<script type="text/javascript" data-dojo-config="'parseOnLoad':true,'async':true,'packages':[{'name':'gridx','location':'../gridx'},{'name':'clipart','location':'../../clipart'},{'name':'maqettaSamples','location':'../../../samples'},{'name':'maqetta','location':'../../maqetta'},{'name':'shapes','location':'../../shapes'},{'name':'zazl','location':'../../zazl'},{'name':'widgets','location':'../../custom'}],'themeMap':[['Android','',['themes/android/android.css']],['BlackBerry','',['themes/blackberry/blackberry.css']],['iPad','',['themes/ipad/ipad.css']],['iPhone','',['themes/iphone/iphone.css']],['.*','',['themes/iphone/iphone.css']]],'mblThemeFiles':[],'mblLoadCompatPattern':''" src="lib/dojo/dojo/dojo.js"></script>
+<script type="text/javascript">
+require([
+  "dijit/dijit",
+  "dojo/parser",
+  "maqetta/space",
+  "maqetta/AppStates",
+  "dijit/form/Button",
+  "dijit/layout/AccordionContainer",
+  "dijit/layout/ContentPane",
+  "clipart/Computer",
+  "clipart/Map"
+]);
+</script>
+<style>@import "themes/claro/document.css";@import "themes/claro/claro.css";@import "app.css";
+</style>
+<script type="text/javascript" src="app.js"></script>
+</head>
+<body data-maq-flow-layout="absolute" data-maq-comptype="sketchhifi" class="claro" data-maq-ws="collapse" id="myapp" data-maq-appstates="{}">
+ <input type="button" data-dojo-type="dijit/form/Button" intermediateChanges="false" label="Button" iconClass="dijitNoIcon" style="position: absolute; z-index: 900; left: 433px; top: 98px;"></input>
+<span data-dojo-type="dijit/layout/AccordionContainer" style="min-width: 1em; min-height: 1em; position: absolute; z-index: 900; width: 300px; height: 300px; left: 80px; top: 27px;">
+<div data-dojo-type="dijit/layout/ContentPane" title="Pane 1" extractContent="false" preventCache="false" preload="false" refreshOnShow="false" selected="true" closable="false" doLayout="false"></div>
+<div data-dojo-type="dijit/layout/ContentPane" title="Pane 2" extractContent="false" preventCache="false" preload="false" refreshOnShow="false" selected="true" closable="false" doLayout="false"></div>
+</span>
+<img data-dojo-type="clipart/Map" style="position: absolute; z-index: 900; left: 506px; top: 20px;"></img>
+</body>
+</html>
